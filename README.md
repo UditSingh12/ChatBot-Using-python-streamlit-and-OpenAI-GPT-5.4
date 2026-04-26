@@ -1,78 +1,40 @@
 # ChatBot-Using-python-streamlit-and-OpenAI-GPT-5.4
 
-🤖 AI Chatbot using Python, Streamlit & OpenAI
-📌 Overview
+## 🤖 AI Chatbot using Python, Streamlit & OpenAI
 
-This project is an interactive AI chatbot built using Python and Streamlit, integrated with the OpenAI API to generate intelligent, real-time responses.
+## 📌 Overview <br>
 
-The application provides a clean chat interface where users can ask questions and receive responses dynamically, making it suitable for learning, experimentation, and deployment.
+This project is an **interactive AI chatbot** built using **Python** and **Streamlit**, integrated with the **OpenAI API** to generate intelligent and real-time responses. <br>
 
-🚀 Features
-💬 Interactive chat interface using Streamlit
-⚡ Real-time response streaming (token-by-token output)
-🧠 Context-aware conversation (chat history maintained)
-🔐 Secure API key management using .env
-🪶 Lightweight and easy to deploy
-📦 Clean project structure with best practices
-🛠️ Tech Stack
-Language: Python
-Framework: Streamlit
-API: OpenAI API
-Environment Management: python-dotenv
-📂 Project Structure
-├── Chatbot.py        # Main application file
-├── requirements.txt # Project dependencies
-├── .env             # API key (not pushed to GitHub)
-├── .gitignore       # Ignore sensitive and unnecessary files
-└── README.md        # Project documentation
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/Uditsingh12/Chatbot-using-python-streamlit-and-OpenAI.git
-cd Chatbot-using-python-streamlit-and-OpenAI
-2️⃣ Create Virtual Environment (Optional but Recommended)
-python -m venv venv
-venv\Scripts\activate   # For Windows
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-4️⃣ Set Up Environment Variables
+The chatbot provides a clean and user-friendly chat interface where users can ask questions and receive responses dynamically. It is suitable for **learning, experimentation, and deployment**. <br>
 
-Create a .env file in the root directory and add:
+---
 
-OPENAI_API_KEY=your_api_key_here
+## 🚀 Features <br>
 
-⚠️ Important: Never share your API key publicly.
+- 💬 Interactive chat interface using Streamlit <br>
+- ⚡ Real-time response streaming (token-by-token output) <br>
+- 🧠 Context-aware conversation with chat history <br>
+- 🔐 Secure API key management using `.env` file <br>
+- 🪶 Lightweight and easy to deploy <br>
+- 📦 Clean project structure with best practices <br>
 
-5️⃣ Run the Application
-streamlit run Chatbot.py
-🧠 How It Works
-User enters a query in the chat interface
-The query is sent to the OpenAI API
-The model processes the input and generates a response
-Response is streamed and displayed in real-time
-Chat history is stored using Streamlit session state
-🔐 Security Best Practices
-API key is stored in .env file
-.env is ignored using .gitignore
-No sensitive data is exposed in the code
-📌 Future Improvements
-Add chatbot memory (long-term context)
-File upload (PDF / CSV chatbot)
-Voice input/output
-Deployment on cloud (Streamlit Cloud / AWS / Render)
-UI enhancements
-🧑‍💻 Author
+---
 
-Udit Singh
+## 🛠️ Tech Stack <br>
 
-GitHub: https://github.com/Uditsingh12
-📄 License
+- **Language:** Python <br>
+- **Framework:** Streamlit <br>
+- **API:** OpenAI API <br>
+- **Environment Management:** python-dotenv <br>
 
-This project is open-source and available under the MIT License.
+---
 
-⭐ Support
+## 📂 Project Structure <br>
 
-If you like this project:
-
-⭐ Star this repository
-🍴 Fork it
-🛠️ Contribute
+```bash
+├── Chatbot.py         # Main chatbot application
+├── requirements.txt  # Required dependencies
+├── .env              # API key file (not uploaded to GitHub)
+├── .gitignore        # Ignore sensitive files
+└── README.md         # Project documentation
