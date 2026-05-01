@@ -56,7 +56,7 @@ with st.sidebar:
     st.write("Built by Udit Singh 🚀")
 
 # ---------------- TITLE ----------------
-st.markdown("<h1 style='text-align: center;'>🤖 AI Chatbot</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>🤖 IntelliChat </h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Ask anything and get instant responses</p>", unsafe_allow_html=True)
 
 # ---------------- CHAT HISTORY ----------------
