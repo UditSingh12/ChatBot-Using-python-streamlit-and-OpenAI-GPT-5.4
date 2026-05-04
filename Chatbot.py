@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
+from dotenv import getenv
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -91,7 +91,7 @@ if prompt := st.chat_input("Type your message..."):
 
             with st.spinner("Thinking..."):
                 stream = client.chat.completions.create(
-                    model="gpt-4o-mini",
+                    model="openrouter/free",
                     messages=[
                         {"role": m["role"], "content": m["content"]}
                         for m in st.session_state.messages
