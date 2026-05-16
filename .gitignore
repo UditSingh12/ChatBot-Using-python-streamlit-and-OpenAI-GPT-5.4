@@ -1,25 +1,20 @@
 # Secrets
 .env
+.streamlit/secrets.toml
 
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 .Python
-venv/
 .venv/
+venv/
 env/
 
-# Binaries
-*.exe
-*.o
-*.obj
+# Streamlit
+.streamlit/cache/
 
-# IDE
+# IDE and OS
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db

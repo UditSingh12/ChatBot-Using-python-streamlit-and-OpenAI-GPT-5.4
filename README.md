@@ -1,40 +1,41 @@
-# ChatBot-Using-python-streamlit-and-OpenAI-GPT-5.4
+# IntelliChat
 
-## 🤖 AI Chatbot using Python, Streamlit & OpenAI
+A Streamlit chatbot that talks to OpenRouter through the OpenAI Python SDK.
 
-## 📌 Overview <br>
+## Run Locally
 
-This project is an **interactive AI chatbot** built using **Python** and **Streamlit**, integrated with the **OpenAI API** to generate intelligent and real-time responses. <br>
-
-The chatbot provides a clean and user-friendly chat interface where users can ask questions and receive responses dynamically. It is suitable for **learning, experimentation, and deployment**. <br>
-
----
-
-## 🚀 Features <br>
-
-- 💬 Interactive chat interface using Streamlit <br>
-- ⚡ Real-time response streaming (token-by-token output) <br>
-- 🧠 Context-aware conversation with chat history <br>
-- 🔐 Secure API key management using `.env` file <br>
-- 🪶 Lightweight and easy to deploy <br>
-- 📦 Clean project structure with best practices <br>
-
----
-
-## 🛠️ Tech Stack <br>
-
-- **Language:** Python <br>
-- **Framework:** Streamlit <br>
-- **API:** OpenAI API <br>
-- **Environment Management:** python-dotenv <br>
-
----
-
-## 📂 Project Structure <br>
+1. Install dependencies:
 
 ```bash
-├── Chatbot.py         # Main chatbot application
-├── requirements.txt  # Required dependencies
-├── .env              # API key file (not uploaded to GitHub)
-├── .gitignore        # Ignore sensitive files
-└── README.md         # Project documentation
+pip install -r requirements.txt
+```
+
+2. Create a local `.env` file. You can copy `.env.example` and replace the key:
+
+```env
+OPENROUTER_API_KEY=your-openrouter-api-key-here
+OPENROUTER_MODEL=openrouter/free
+```
+
+3. Start the app:
+
+```bash
+streamlit run app.py
+```
+
+## Deploy On Streamlit Community Cloud
+
+Use `app.py` as the main file.
+
+In your Streamlit app settings, add these secrets:
+
+```toml
+OPENROUTER_API_KEY = "your-openrouter-api-key-here"
+OPENROUTER_MODEL = "openrouter/free"
+OPENROUTER_SITE_NAME = "IntelliChat"
+```
+
+Do not upload `.env` or `.streamlit/secrets.toml` to GitHub.
+
+`openrouter/free` automatically routes requests to the free models currently
+available on OpenRouter.
