@@ -517,7 +517,6 @@ st.markdown(
         margin-top: 1rem;
     }}
 
-    /* Premium scrollbar styling */
     ::-webkit-scrollbar {{
         width: 8px;
         height: 8px;
@@ -652,8 +651,8 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"], avatar="🧠" if message["role"] == "assistant" else "👤"):
         st.markdown(message["content"])
 
-# Chat input
-prompt = st.chat_input("Type your message here...", placeholder="Ask me anything...")
+# Chat input - FIXED: Removed placeholder parameter for compatibility
+prompt = st.chat_input("Type your message here...")
 
 if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
