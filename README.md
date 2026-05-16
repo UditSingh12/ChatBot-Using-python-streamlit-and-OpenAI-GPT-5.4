@@ -32,6 +32,7 @@ inside the Streamlit session, and streams AI responses as they are generated.
 ```text
 .
 |-- app.py
+|-- Chatbot.py
 |-- requirements.txt
 |-- README.md
 |-- .env.example
@@ -45,6 +46,9 @@ inside the Streamlit session, and streams AI responses as they are generated.
 The app loads an OpenRouter API key from environment variables, creates an
 OpenAI-compatible client, and sends chat messages to OpenRouter using the
 selected free model.
+
+`app.py` and `Chatbot.py` contain the same Streamlit app so the project works
+with either file name.
 
 By default, the app uses:
 
